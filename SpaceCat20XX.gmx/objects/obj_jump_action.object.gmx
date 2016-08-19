@@ -29,7 +29,7 @@
 //Check if the action item is completely off screen, if so, destroy it
 hspeed = global.action_hsp;
 
-if (x &lt;= 608)
+if (x &lt;= 320)
     {
         image_alpha = (image_alpha - 0.01);
     }
