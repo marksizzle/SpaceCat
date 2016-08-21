@@ -205,7 +205,8 @@
       <sound>sound\ambient_cresendo_bleep</sound>
       <sound>sound\ambient_long_bleep</sound>
     </sounds>
-    <sound>sound\bg_music</sound>
+    <sound>sound\snd_menu_music</sound>
+    <sound>sound\snd_game_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -219,6 +220,8 @@
     <sprite>sprites\spr_action_start</sprite>
     <sprite>sprites\sEXAMPLE</sprite>
     <sprite>sprites\spr_life_heart</sprite>
+    <sprite>sprites\spr_menu_arrow</sprite>
+    <sprite>sprites\spr_logo</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_space_test</background>
@@ -242,13 +245,19 @@
     </scripts>
     <scripts name="Enemy Scripts">
       <script>scripts\Wave_1.gml</script>
+      <script>scripts\wave_2.gml</script>
+      <script>scripts\wave_3.gml</script>
+      <script>scripts\wave_4.gml</script>
     </scripts>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_large</font>
+    <font>fonts\fnt_menu</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_menu</object>
     <object>objects\obj_alien_1</object>
     <object>objects\obj_alien_laser</object>
     <object>objects\obj_player_laser</object>
@@ -266,6 +275,7 @@
     <object>objects\obj_enemy_waves</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_main_menu</room>
     <room>rooms\rm_main</room>
   </rooms>
   <help>

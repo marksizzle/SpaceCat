@@ -77,8 +77,10 @@ global.hearts = 9;
 script_execute(Feryx_Star_Create, global.star_type, global.star_texture_size, global.star_speed, global.star_start_direction, global.star_layer_dense, global.star_size, global.star_sprite_name, global.star_sprite_index, global.star_diff_color);
 
 //Kick off background music
-var snd = audio_play_sound(bg_music, 10, true);
-audio_sound_gain(snd, 1, 0);
+audio_stop_sound(snd_menu_music);
+var snd = audio_play_sound(snd_game_music, 10, true);
+audio_sound_gain(snd, 0.1, 0);
+
 </string>
           </argument>
         </arguments>
