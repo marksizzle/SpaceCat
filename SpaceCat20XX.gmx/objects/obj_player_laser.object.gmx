@@ -28,8 +28,8 @@
             <string>//Set bullet speed
 hspeed = 2;
 
-audio_play_sound(electro_low_bleep, 10, false);
-
+var snd = audio_play_sound(Pew_01, 8, false);
+audio_sound_gain(snd, 0.1, 0);
 
 </string>
           </argument>
@@ -59,7 +59,7 @@ if (x &gt; 1280)
     instance_destroy();
     }
 
-//If the laser hits an enemy alien then destroy both objects
+//If the laser hits an enemy alien then destroy both objects and reward 10 points
 if (place_meeting(x, y, obj_alien_1))
     {
     var target;
@@ -67,9 +67,25 @@ if (place_meeting(x, y, obj_alien_1))
     instance_destroy();
     with (target) 
         {
+        var snd = audio_play_sound(Exlode_09,8,0);
+        audio_sound_gain(snd,0.4,0);
         instance_destroy();
         }
     global.points += 10;
+    }
+    
+//If the laser hits an alien laser then destroy both objects and reward 5 points
+if (place_meeting(x, y, obj_alien_laser))
+    {
+    var target;
+    target = instance_nearest(x, y, obj_alien_laser);
+    instance_destroy();
+    with (target) 
+        {
+        audio_play_sound(Exlode_07,8,0);
+        instance_destroy();
+        }
+    global.points += 5;
     }
 </string>
           </argument>

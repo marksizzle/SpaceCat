@@ -8,6 +8,83 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Set values for parallax background script
+global.star_type = 0;
+global.star_texture_size = 2;
+global.star_speed = 3;
+global.star_start_direction = 0;
+global.star_layer_dense = 50;
+global.star_size = 10;
+global.star_sprite_name = "sEXAMPLE";
+global.star_sprite_index = 5;
+global.star_diff_color = 0;
+global.star_direction = 180; 
+global.star_wind_type = 0;
+
+
+
+//Call background script
+script_execute(Feryx_Star_Create, global.star_type, global.star_texture_size, global.star_speed, global.star_start_direction, global.star_layer_dense, global.star_size, global.star_sprite_name, global.star_sprite_index, global.star_diff_color);
+
+//Kick off background music
+audio_stop_sound(snd_game_music);
+var snd = audio_play_sound(snd_menu_music, 9, true);
+audio_sound_gain(snd, 0.5, 0);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Execute code for background
+script_execute(Feryx_Star_STEPP, global.star_speed, global.star_direction, global.star_wind_type);
+   
+var push;
+push = max(keyboard_check_released(vk_enter), keyboard_check_released(vk_space), gamepad_button_check_pressed(0, gp_face1), 0);
+if (push == 1) 
+   {
+   audio_play_sound(Jump_10,9,0);
+   room_goto(rm_main_menu);
+   }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -29,9 +106,11 @@
 draw_set_valign(fa_middle);
 draw_set_font(fnt_large);
 draw_set_color(c_white);
-draw_text(room_width/2, room_height/2, "Game Over");
+draw_text(room_width/2, room_height/2 - 50, "Game Over");
 draw_set_font(fnt_large);
-draw_text(room_width/2, room_height/2 + 50, "Press select (shift) to restart!");
+draw_text(room_width/2, room_height/2, "Your score was: ");
+draw_text(room_width/2, room_height/2 + 50, global.points);
+draw_text(room_width/2, room_height/2 + 100, "Press 'fire' to restart!");
 </string>
           </argument>
         </arguments>

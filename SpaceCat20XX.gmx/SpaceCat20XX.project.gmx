@@ -26,187 +26,109 @@
     <extension index="0">extensions\Sci-Fi Background Music</extension>
     <extension index="1">extensions\Parallax 3D Starfield</extension>
     <extension index="2">extensions\Developers Essential Audio Megapack</extension>
+    <extension index="3">extensions\Retro Sound Pack</extension>
   </NewExtensions>
   <sounds name="sound">
-    <sounds name="Themed Sets">
-      <sounds name="Basic Beeps">
-        <sound>sound\basic_b1</sound>
-        <sound>sound\basic_b2</sound>
-        <sound>sound\basic_b3</sound>
-        <sound>sound\basic_b4</sound>
-        <sound>sound\basic_b_chime1</sound>
-        <sound>sound\basic_b_chime2</sound>
-        <sound>sound\basic_b_chime3</sound>
-        <sound>sound\basic_b_chime4</sound>
-        <sound>sound\basic_b_descend1</sound>
-        <sound>sound\basic_b_descend2</sound>
-        <sound>sound\basic_b_descend3</sound>
-        <sound>sound\basic_b_descend4_exit</sound>
-        <sound>sound\basic_b_stepup1</sound>
-        <sound>sound\basic_b_stepup2</sound>
-        <sound>sound\basic_b_stepup3</sound>
-        <sound>sound\basic_b_stepup4</sound>
-        <sound>sound\basic_b_stepup5</sound>
-        <sound>sound\basic_b_stepup6</sound>
-        <sound>sound\basic_b_tonic</sound>
-      </sounds>
-      <sounds name="Bass Beeps">
-        <sound>sound\bass_b1</sound>
-        <sound>sound\bass_b2</sound>
-        <sound>sound\bass_b3</sound>
-        <sound>sound\bass_b4</sound>
-        <sound>sound\bass_chime1</sound>
-        <sound>sound\bass_chime2</sound>
-        <sound>sound\bass_chime3</sound>
-        <sound>sound\bass_chime4</sound>
-        <sound>sound\bass_descend1</sound>
-        <sound>sound\bass_descend2</sound>
-        <sound>sound\bass_descend3</sound>
-        <sound>sound\bass_descend4_exit</sound>
-        <sound>sound\bass_step_up1</sound>
-        <sound>sound\bass_step_up2</sound>
-        <sound>sound\bass_step_up3</sound>
-        <sound>sound\bass_step_up4</sound>
-        <sound>sound\bass_step_up5_stressed</sound>
-        <sound>sound\bass_step_up6_resolved</sound>
-        <sound>sound\bass_tonic</sound>
-      </sounds>
-      <sounds name="Orchestral Beeps">
-        <sound>sound\orc_b1</sound>
-        <sound>sound\orc_b2</sound>
-        <sound>sound\orc_b3</sound>
-        <sound>sound\orc_b4</sound>
-        <sound>sound\orc_chime1</sound>
-        <sound>sound\orc_chime2</sound>
-        <sound>sound\orc_chime3</sound>
-        <sound>sound\orc_chime4</sound>
-        <sound>sound\orc_descend1</sound>
-        <sound>sound\orc_descend2</sound>
-        <sound>sound\orc_descend3</sound>
-        <sound>sound\orc_descend4_exit</sound>
-        <sound>sound\orc_step_up1</sound>
-        <sound>sound\orc_step_up2</sound>
-        <sound>sound\orc_step_up3</sound>
-        <sound>sound\orc_step_up4</sound>
-        <sound>sound\orc_step_up5_stressed</sound>
-        <sound>sound\orc_step_up6_resolved</sound>
-        <sound>sound\orc_tonic</sound>
-      </sounds>
-      <sounds name="Synth1 Beeps">
-        <sound>sound\synth1_b1</sound>
-        <sound>sound\synth1_b2</sound>
-        <sound>sound\synth1_b3</sound>
-        <sound>sound\synth1_b4</sound>
-        <sound>sound\synth1_chime1</sound>
-        <sound>sound\synth1_chime2</sound>
-        <sound>sound\synth1_chime3</sound>
-        <sound>sound\synth1_chime4</sound>
-        <sound>sound\synth1_descend1</sound>
-        <sound>sound\synth1_descend2</sound>
-        <sound>sound\synth1_descend3</sound>
-        <sound>sound\synth1_descend4_exit</sound>
-        <sound>sound\synth1_step_up1</sound>
-        <sound>sound\synth1_step_up2</sound>
-        <sound>sound\synth1_step_up3</sound>
-        <sound>sound\synth1_step_up4</sound>
-        <sound>sound\synth1_step_up5_stressed</sound>
-        <sound>sound\synth1_step_up6_resolved</sound>
-        <sound>sound\synth1_tonic</sound>
-      </sounds>
-      <sounds name="Synth2 Beeps">
-        <sound>sound\synth2_b1</sound>
-        <sound>sound\synth2_b2</sound>
-        <sound>sound\synth2_b3</sound>
-        <sound>sound\synth2_b4</sound>
-        <sound>sound\synth2_chimes1</sound>
-        <sound>sound\synth2_chimes2</sound>
-        <sound>sound\synth2_chimes3</sound>
-        <sound>sound\synth2_chimes4</sound>
-        <sound>sound\synth2_descend1</sound>
-        <sound>sound\synth2_descend2</sound>
-        <sound>sound\synth2_descend3</sound>
-        <sound>sound\synth2_descend4_exit</sound>
-        <sound>sound\synth2_step_up1</sound>
-        <sound>sound\synth2_step_up2</sound>
-        <sound>sound\synth2_step_up3</sound>
-        <sound>sound\synth2_step_up4</sound>
-        <sound>sound\synth2_step_up5_stressed</sound>
-        <sound>sound\synth2_step_up6_resolved</sound>
-        <sound>sound\synth2_tonic</sound>
-      </sounds>
-    </sounds>
-    <sounds name="Alerts, Chimes, Jingles">
-      <sound>sound\happy_bells_success</sound>
-      <sound>sound\happy_bells_start</sound>
-      <sound>sound\happy_bells_jingle</sound>
-      <sound>sound\happy_bells_diminish</sound>
-      <sound>sound\happy_bells_continue</sound>
-      <sound>sound\exotic_start</sound>
-      <sound>sound\exotic_special</sound>
-      <sound>sound\exotic_jingle</sound>
-      <sound>sound\exotic_diminish</sound>
-      <sound>sound\exotic_continue</sound>
-      <sound>sound\dancy_start</sound>
-      <sound>sound\dancy_special</sound>
-      <sound>sound\dancy_jingle</sound>
-      <sound>sound\dancy_diminish</sound>
-      <sound>sound\dancy_continue</sound>
-      <sound>sound\alert_zornath</sound>
-      <sound>sound\alert_highblip_reverbtrail</sound>
-      <sound>sound\alert_hardstyle_delayup</sound>
-      <sound>sound\alert_hardstyle_delay</sound>
-      <sound>sound\alert_gammalon</sound>
-      <sound>sound\alert_echofail</sound>
-      <sound>sound\alert_droid_exterminate</sound>
-      <sound>sound\alert_dissonance</sound>
-      <sound>sound\alert_crumble</sound>
-      <sound>sound\alert_clubtrance_short</sound>
-      <sound>sound\alert_abyssal</sound>
-    </sounds>
-    <sounds name="Beeps, Assorted, Menu, Game-Sounds">
-      <sound>sound\wow_bleep3</sound>
-      <sound>sound\wow_bleep2</sound>
-      <sound>sound\wow_bleep</sound>
-      <sound>sound\wah_phased_bleep</sound>
-      <sound>sound\tron_esque_bleep</sound>
-      <sound>sound\tine_low_bleep</sound>
-      <sound>sound\start_bleep</sound>
-      <sound>sound\sine_beep_simple</sound>
-      <sound>sound\pizzicato_bleep</sound>
-      <sound>sound\overtone_synthy_bleep</sound>
-      <sound>sound\long_echo_bleep</sound>
-      <sound>sound\harmonic_bleep</sound>
-      <sound>sound\glide_blip_bleep</sound>
-      <sound>sound\glass_bleep_trail</sound>
-      <sound>sound\explode_bleep</sound>
-      <sound>sound\envelope_in_bleep</sound>
-      <sound>sound\electro_low_bleep</sound>
-      <sound>sound\cute_bleep</sound>
-      <sound>sound\click_wood_bleep</sound>
-      <sound>sound\bowed_string_bleep</sound>
-      <sound>sound\blip_stab_bleep</sound>
-      <sound>sound\bleep_synthy_echo</sound>
-      <sound>sound\bleep_pluck</sound>
-      <sound>sound\bleep_piano</sound>
-      <sound>sound\bleep_longbell</sound>
-      <sound>sound\bleep_kototar</sound>
-      <sound>sound\bleep_brightbell</sound>
-      <sound>sound\bleep_alert_hardstyle3</sound>
-      <sound>sound\bleep_alert_hardstyle2</sound>
-      <sound>sound\bleep_alert_hardstyle</sound>
-      <sound>sound\ahh_bleep</sound>
-      <sound>sound\acknowledged_bleep</sound>
-    </sounds>
-    <sounds name="Ambient">
-      <sound>sound\ambient_sine_bleep2</sound>
-      <sound>sound\ambient_sine_bleep</sound>
-      <sound>sound\ambient_pad_bleep</sound>
-      <sound>sound\ambient_horror_bleep</sound>
-      <sound>sound\ambient_cresendo_bleep</sound>
-      <sound>sound\ambient_long_bleep</sound>
-    </sounds>
     <sound>sound\snd_menu_music</sound>
     <sound>sound\snd_game_music</sound>
+    <sound>sound\Explode_1</sound>
+    <sound>sound\Missle_Start_1</sound>
+    <sound>sound\Exlode_01</sound>
+    <sound>sound\Exlode_02</sound>
+    <sound>sound\Exlode_03</sound>
+    <sound>sound\Exlode_04</sound>
+    <sound>sound\Exlode_05</sound>
+    <sound>sound\Exlode_07</sound>
+    <sound>sound\Exlode_08</sound>
+    <sound>sound\Exlode_09</sound>
+    <sound>sound\Exlode_10</sound>
+    <sound>sound\Footstep_01</sound>
+    <sound>sound\Footstep_02</sound>
+    <sound>sound\Footstep_03</sound>
+    <sound>sound\Footstep_04</sound>
+    <sound>sound\Footstep_05</sound>
+    <sound>sound\Footstep_06</sound>
+    <sound>sound\Footstep_07</sound>
+    <sound>sound\Footstep_08</sound>
+    <sound>sound\Footstep_09</sound>
+    <sound>sound\Footstep_10</sound>
+    <sound>sound\Jump_01</sound>
+    <sound>sound\Jump_02</sound>
+    <sound>sound\Jump_03</sound>
+    <sound>sound\Jump_04</sound>
+    <sound>sound\Jump_06</sound>
+    <sound>sound\Jump_07</sound>
+    <sound>sound\Jump_08</sound>
+    <sound>sound\Jump_09</sound>
+    <sound>sound\Laser_1</sound>
+    <sound>sound\Laser_2</sound>
+    <sound>sound\Laser_3</sound>
+    <sound>sound\Laser_4</sound>
+    <sound>sound\Menu_01</sound>
+    <sound>sound\Menu_02</sound>
+    <sound>sound\Menu_03</sound>
+    <sound>sound\Menu_04</sound>
+    <sound>sound\Menu_05</sound>
+    <sound>sound\Menu_06</sound>
+    <sound>sound\Menu_07</sound>
+    <sound>sound\Menu_08</sound>
+    <sound>sound\Menu_09</sound>
+    <sound>sound\Menu_10</sound>
+    <sound>sound\Missle_start</sound>
+    <sound>sound\Ouch_01</sound>
+    <sound>sound\Ouch_02</sound>
+    <sound>sound\Ouch_03</sound>
+    <sound>sound\Ouch_04</sound>
+    <sound>sound\Ouch_05</sound>
+    <sound>sound\Ouch_06</sound>
+    <sound>sound\Ouch_08</sound>
+    <sound>sound\Ouch_09</sound>
+    <sound>sound\Ouch_10</sound>
+    <sound>sound\Pew_02</sound>
+    <sound>sound\Pew_03</sound>
+    <sound>sound\Pew_04</sound>
+    <sound>sound\Pew_05</sound>
+    <sound>sound\Pew_06</sound>
+    <sound>sound\Pew_07</sound>
+    <sound>sound\Pew_08</sound>
+    <sound>sound\Pew_09</sound>
+    <sound>sound\Powerup_01</sound>
+    <sound>sound\Powerup_02</sound>
+    <sound>sound\Powerup_03</sound>
+    <sound>sound\Powerup_04</sound>
+    <sound>sound\Powerup_05</sound>
+    <sound>sound\Powerup_06</sound>
+    <sound>sound\Powerup_07</sound>
+    <sound>sound\Powerup_08</sound>
+    <sound>sound\Powerup_09</sound>
+    <sound>sound\Powerup_10</sound>
+    <sound>sound\Punch_01</sound>
+    <sound>sound\Punch_02</sound>
+    <sound>sound\Punch_03</sound>
+    <sound>sound\Punch_04</sound>
+    <sound>sound\Punch_05</sound>
+    <sound>sound\Punch_06</sound>
+    <sound>sound\Punch_07</sound>
+    <sound>sound\Punch_08</sound>
+    <sound>sound\Punch_09</sound>
+    <sound>sound\Punch_10</sound>
+    <sound>sound\Space_01</sound>
+    <sound>sound\Space_02</sound>
+    <sound>sound\Space_03</sound>
+    <sound>sound\Space_04</sound>
+    <sound>sound\Space_05</sound>
+    <sound>sound\Space_06</sound>
+    <sound>sound\Space_07</sound>
+    <sound>sound\Space_09</sound>
+    <sound>sound\Space_10</sound>
+    <sounds name="Sound Effects">
+      <sound>sound\Ouch_07</sound>
+      <sound>sound\Pew_10</sound>
+      <sound>sound\Pew_01</sound>
+      <sound>sound\Exlode_06</sound>
+      <sound>sound\Jump_05</sound>
+      <sound>sound\Jump_10</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>
@@ -244,10 +166,11 @@
       </scripts>
     </scripts>
     <scripts name="Enemy Scripts">
-      <script>scripts\Wave_1.gml</script>
+      <script>scripts\wave_1.gml</script>
       <script>scripts\wave_2.gml</script>
       <script>scripts\wave_3.gml</script>
       <script>scripts\wave_4.gml</script>
+      <script>scripts\wave_5.gml</script>
     </scripts>
     <script>scripts\scr_menu.gml</script>
   </scripts>
@@ -273,10 +196,13 @@
     <object>objects\obj_score</object>
     <object>objects\obj_gameover</object>
     <object>objects\obj_enemy_waves</object>
+    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main_menu</room>
     <room>rooms\rm_main</room>
+    <room>rooms\rm_credits</room>
+    <room>rooms\rm_death</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

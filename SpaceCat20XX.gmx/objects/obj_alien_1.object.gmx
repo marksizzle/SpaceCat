@@ -60,9 +60,23 @@ if (x &lt; 0)
 //If the alien ship hits the player then subtract a life
 if (place_meeting(x, y, obj_player))
     {
+    audio_play_sound(Ouch_07,8,0);
     instance_destroy();
     global.hearts = global.hearts - 1
     }
+    
+if (place_empty(x - 32 ,y))
+    {
+    //alarm[0] = room_speed;
+    //Get a whole integer between 0 and 9 to create a 1/10 chance that the enemy shoots
+    var fire = irandom(124);
+    if (fire == 1)
+       {
+       instance_create(x - 32, y, obj_alien_laser);
+       }
+    }
+    
+
 </string>
           </argument>
         </arguments>

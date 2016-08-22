@@ -49,8 +49,17 @@ mpos = 0;
 //Call background script
 script_execute(Feryx_Star_Create, global.star_type, global.star_texture_size, global.star_speed, global.star_start_direction, global.star_layer_dense, global.star_size, global.star_sprite_name, global.star_sprite_index, global.star_diff_color);
 
-var snd = audio_play_sound(snd_menu_music, 9, true);
-audio_sound_gain(snd, 0.5, 0);
+if audio_is_playing(snd_menu_music)
+   {
+   
+   }
+else
+    {
+    var snd = audio_play_sound(snd_menu_music, 9, true);
+    audio_sound_gain(snd, 0.5, 0);
+    }
+
+randomize();
 </string>
           </argument>
         </arguments>
@@ -79,21 +88,26 @@ script_execute(Feryx_Star_STEPP, global.star_speed, global.star_direction, globa
 var move = 0;
 
 //Make the move variable either 1 or -1 based upon user input
-move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")), 0);
-move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")), 0);
+move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")), gamepad_button_check_pressed(0, gp_padu), 0);
+move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")), gamepad_button_check_pressed(0, gp_padd), 0);
 
 //Check the value of move
 //If it is non-zero then move the menu
 if (move != 0)
    {
    mpos += move;
+   audio_play_sound(Jump_05,9,0);
    if (mpos &lt; 0) mpos = array_length_1d(menu) - 1;
    if (mpos &gt; array_length_1d(menu) - 1) mpos = 0;
    }
    
 var push;
-push = max(keyboard_check_released(vk_enter), keyboard_check_released(vk_shift), keyboard_check_released(vk_space), 0);
-if (push == 1) scr_menu();
+push = max(keyboard_check_released(vk_enter), keyboard_check_released(vk_space), gamepad_button_check_pressed(0, gp_face1), 0);
+if (push == 1) 
+   {
+   audio_play_sound(Jump_10,9,0);
+   scr_menu();
+   }
 </string>
           </argument>
         </arguments>

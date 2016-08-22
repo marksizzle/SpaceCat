@@ -49,7 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>draw_set_color(c_white);
-draw_text_transformed(96, 64, global.points, 2, 2, 0);
+draw_set_font(fnt_large);
+draw_text_transformed(64, 672, global.points, 2, 2, 0);
 </string>
           </argument>
         </arguments>

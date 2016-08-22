@@ -32,7 +32,7 @@
 if (place_empty(x,y))
     {
     alarm[0] = room_speed;
-    instance_create(x,y,(choose(obj_jump_action, obj_shoot_action, obj_fall_action)));
+    instance_create(x,y,(choose(obj_jump_action, obj_shoot_action, obj_fall_action, obj_jump_action, obj_fall_action)));
     }
 </string>
           </argument>

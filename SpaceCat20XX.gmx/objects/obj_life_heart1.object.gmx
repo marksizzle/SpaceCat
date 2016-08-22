@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if (global.hearts == 0)
     {
-    instance_create(0,0,obj_gameover);
+    room_goto(rm_death);
     }
 </string>
           </argument>

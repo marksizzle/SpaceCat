@@ -66,8 +66,8 @@ global.star_wind_type = 0;
 //These values will be used to control the speed of the action objects
 global.hsp = -5;
 global.vsp = 0;
-global.action_hsp = -3;
-global.alien_hsp = -3;
+global.action_hsp = -3.2;
+global.alien_hsp = -3.5;
 
 //Set up global variable for lives/hearts
 global.hearts = 9;
@@ -79,7 +79,7 @@ script_execute(Feryx_Star_Create, global.star_type, global.star_texture_size, gl
 //Kick off background music
 audio_stop_sound(snd_menu_music);
 var snd = audio_play_sound(snd_game_music, 10, true);
-audio_sound_gain(snd, 0.1, 0);
+audio_sound_gain(snd, 0.2, 0);
 
 </string>
           </argument>
@@ -128,8 +128,10 @@ if keyboard_check(vk_shift)
 if keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
     {
     //Check to see if the jump action is in the action box
-    if position_meeting(384, 64, obj_jump_action)
+    if position_meeting(192, 64, obj_jump_action)
         {
+        var snd1 = audio_play_sound(Punch_03,8,0);
+        audio_sound_gain(snd1,0.2,0);
         //Move player up, if possible
         //Check that current position is not Y == 192
         //If not 192 then move up
@@ -143,8 +145,10 @@ if keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
             }
         }
     //Check to see if the fall action is in the action box
-    if position_meeting(384, 64, obj_fall_action)
+    if position_meeting(192, 64, obj_fall_action)
         {
+        var snd2 = audio_play_sound(Punch_03,8,0);
+        audio_sound_gain(snd2,0.2,0);
         //Move player down, if possible
         //Check that current position is not Y == 576
         //If not 576 then move down
@@ -158,9 +162,11 @@ if keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
             }
         }
     //Check to see if the shoot action is in the action box
-    if position_meeting(384, 64, obj_shoot_action)
+    if position_meeting(192, 64, obj_shoot_action)
         {
         //Shoot a laser!!!!
+        var snd3 = audio_play_sound(Pew_01,8,0);
+        audio_sound_gain(snd3,0.2,0);
         instance_create(obj_player.x, obj_player.y, obj_player_laser);
         }
     }

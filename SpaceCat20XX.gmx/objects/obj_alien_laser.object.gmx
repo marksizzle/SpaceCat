@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>hspeed = global.hsp;
+var snd = audio_play_sound(Pew_10,8,0);
+audio_sound_gain(snd, 0.3, 0);
 </string>
           </argument>
         </arguments>
@@ -58,6 +60,7 @@ if (x &lt; 0)
 //If the alien laser hits the player then subtract a life
 if (place_meeting(x, y, obj_player))
     {
+    audio_play_sound(Ouch_07,8,0);
     instance_destroy();
     global.hearts = global.hearts - 1
     }

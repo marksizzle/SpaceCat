@@ -12,6 +12,7 @@ switch (mpos)
            }
            case 2: 
            {
+                room_goto(rm_credits);
                 break;
            }
            case 3: 
